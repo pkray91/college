@@ -1,0 +1,21 @@
+<h1>Courses</h1>
+
+<div>
+<table border=1>
+    <tr>
+        <th>Name</th>
+        <th>DESC</th>
+        <th>Images</th>
+        <th>Semester</th>
+    </tr>
+    {% for i in course %}
+    <tr>
+        {% comment %} {{ i }} {% endcomment %}
+        <td>{{ i.title }}</td>
+        <td>{{ i.description }}</td>
+        <td><img src="{{ i.coureses_images.url }}" height="50px" width="50px"></td>
+        <td>{{ i.semester }}</td>
+    </tr>
+    {% endfor %}
+</table>
+</div>
