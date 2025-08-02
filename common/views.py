@@ -33,7 +33,6 @@ class Common(View):
         # data = Coureses.objects.all().values()# return queryset and each record will be dict.
         # data = Coureses.objects.all().values_list('title','description')# return queryset and each record will be tuple.
         
-        print(data,9999999999)
         for i in data:
             pass
             # print(type(i))
